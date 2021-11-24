@@ -3,7 +3,8 @@
     /* Color */
     --color-white: #FAFAFA;
     --color-dark-blue: #07689F;
-    --color-light-blue: #A2D5F2;
+    --color-light-blue: #6CADD4;
+    --color-sky-blue: #A2D5F2;
     --color-orange: #FF7E67;
     --color-red: #E35940;
     --color-light-grey: #7C7979;
@@ -157,7 +158,73 @@ p {
     border-radius: var(--size-border-radius);
 }
 
+/* Section common */
+.section {
+    text-align: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* About */
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    color: var(--color-dark-blue);
+    border: 1px solid var(--color-light-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.major__icon i {
+    transition: all var(--animation-duration) ease;
+}
+.major__icon i:hover {
+    color: var(--color-light-blue);
+    transform: scale(1.1);
+}
+
+.major__title,
+.major__description {
+    color: var(--color-dark-grey);
+}
+
+.major__description {
+    font-size: var(--font-small);
+}
+
+.exp {
+    display: flex;
+    align-items: center;
+}
+
+.exp__description {
+    margin: 0 16px;
+    text-align: left;
+}
+
+.exp__name,
+.exp__period 
+{
+    color: var(--color-grey);
+}
+
+.exp__name {
+    font-size: var(--font-small);
+}
+
+.exp__period {
+    font-size: var(--font-micro);
+}
 
 /* Skills */
 
