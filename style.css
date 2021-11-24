@@ -7,9 +7,9 @@
     --color-sky-blue: #A2D5F2;
     --color-orange: #FF7E67;
     --color-red: #E35940;
-    --color-light-grey: #7C7979;
-    --color-grey: #616161;
-    --color-dark-grey: #4D4D4D;
+    --color-light-grey: #616161;
+    --color-grey: #4D4D4D;
+    --color-dark-grey: #3C3C3C;
     --color-black: #000000;
 
     /* Font size */
@@ -25,7 +25,7 @@
     --weight-regular: 400;
 
     /* Size */
-    --size-border-radius: 4px;
+    --size-border-radius: 8px;
 
   /* Annimation */
     --animation-duration: 300ms;
@@ -98,7 +98,7 @@ p {
     background-color: var(--color-dark-blue);
     align-items: center;
     color: var(--color-white);
-    padding: 16px;
+    padding: 8px 16px;
 }
 
 .navbar__logo {
@@ -162,6 +162,11 @@ p {
 .section {
     text-align: center;
     padding: 50px;
+    margin: auto;
+    background-color: var(--color-white);
+}
+
+.section__container {
     max-width: 1200px;
     margin: auto;
 }
@@ -227,5 +232,70 @@ p {
 }
 
 /* Skills */
+#skills {
+    background-color: var(--color-orange);
+}
+
+.skillset {
+    display: flex;
+    background-color: var(--color-white);
+    color: var(--color-white);
+    margin: 20px 0;
+    border-radius: var(--size-border-radius);
+}
+
+.skillset__title {
+    color: var(--color-white);
+}
+
+.skillset__right__title {
+    color: var(--color-dark-grey);
+}
+.skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-dark-blue);
+    padding: 20px 40px;
+    border-radius: var(--size-border-radius) 0 0 var(--size-border-radius);
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skill_description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-light-blue);
+}
+
+.skill__value {
+    height: 3px;
+    background-color: var(--color-red);
+}
+
+.skillset__right {
+    flex-basis: 40%;
+    color: var(--color-dark-grey);
+}
+
+.tools {
+    background-color: var(--color-sky-blue);
+    border-radius: 0 var(--size-border-radius) 0 0;
+}
+
+.tools,
+.etc
+{
+    padding: 20px;
+}
 
 /* Work */
+
+/* Testimonials */
+
+/* Contact */
