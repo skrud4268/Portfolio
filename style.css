@@ -1,0 +1,42 @@
+/* Global */
+:root{
+    /* Color */
+    --color-white: #FFFFFF;
+    --color-light-white: #FAFAFA;
+    --color-dark-blue: #07689F;
+    --color-light-blue: #A2D5F2;
+    --color-orange: #FF7E67;
+    --color-red: #E35940;
+    --color-light-grey: #7C7979;
+    --color-grey: #616161;
+    --color-dark-grey: #4D4D4D;
+    --color-black: #000000;
+    
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+    --size-border-radius: 4px;
+
+  /* Annimation */
+    --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
