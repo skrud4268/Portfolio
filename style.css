@@ -466,11 +466,30 @@ p {
 /* Arrow up */
 .arrow-up {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 70px;
-    height: 70px;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    background-color: var(--color-white);
+    color: var(--color-dark-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in;
+}
+
+.arrow-up span{
+    line-height: 60px;
     font-size: 60px;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* For below 768px screen width */
