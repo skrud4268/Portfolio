@@ -438,7 +438,7 @@ p {
 
 /* Contact */
 #contact {
-    background-color: var(--color-dark-blue);
+    background: url("imgs/home-background.png") center/cover no-repeat;
 }
 
 .contact__title,
@@ -461,6 +461,16 @@ p {
 
 .contact__rights {
     margin-top: 48px;
+}
+
+/* Arrow up */
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
 }
 
 /* For below 768px screen width */
