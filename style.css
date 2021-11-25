@@ -104,7 +104,7 @@ p {
     color: var(--color-white);
     padding: 8px 16px;
     transition: all var(--animation-duration) ease-in-out;
-    z-index: 1;
+    z-index: 3;
 }
 
 #navbar.navbar--dark {
@@ -154,7 +154,7 @@ p {
 #home {
     background: url("imgs/home-background.png") center/cover no-repeat;
     padding: 40px;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -181,7 +181,7 @@ p {
 /* Section common */
 .section {
     text-align: center;
-    padding: 50px;
+    padding: 150px;
     margin: auto;
     background-color: var(--color-white);
 }
@@ -361,6 +361,7 @@ p {
     transition: all var(--animation-duration) ease-in;
 }
 
+/* Projects */
 .work__projects {
     display: flex;
     flex-wrap: wrap;
@@ -432,6 +433,38 @@ p {
 .project__utility {
     font-size: var(--font-micro);
     color: var(--color-dark-white);
+}
+
+/* Exhibitions */
+.exhibitions h2 {
+    margin: 48px 0;
+}
+
+.exhibition {
+    position: relative;
+    padding-bottom: 72px;
+}
+
+.exhibition__photo {
+    background-color: yellow;
+    text-align: left;
+    z-index: 1;
+}
+
+.photo__img {
+    width: 560px;
+    height: 350px;
+    max-width: 100%;
+}
+
+.exhibtion__description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 640px;
+    text-align: right;
+    background-color: yellowgreen;
+    z-index: 2;
 }
 
 /* Testimonials */
