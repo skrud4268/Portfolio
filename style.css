@@ -437,7 +437,7 @@ p {
 }
 
 /* Exhibitions */
-.exhibitions h2 {
+.exhibitions h1 {
   margin-top: 72px;
   margin-bottom: 48px;
 }
@@ -447,6 +447,11 @@ p {
   max-width: 1120px;
   padding-bottom: 72px;
   margin: 4px;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.exhibition:hover {
+  transform: scale(1.04) translateY(-10px);
 }
 
 .exhibition__photo {
