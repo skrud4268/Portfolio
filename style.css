@@ -6,6 +6,7 @@
     --color-dark-blue: #07689F;
     --color-light-blue: #6CADD4;
     --color-sky-blue: #A2D5F2;
+    --color-mint: #ADFFE3;
     --color-orange: #FF7E67;
     --color-red: #E35940;
     --color-light-grey: #616161;
@@ -129,7 +130,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-light-blue);
+    background-color: var(--color-sky-blue);
 }
 
 /* Home */
@@ -365,6 +366,7 @@ p {
 }
 
 .project__title h3 {
+    font-weight: var(--weight-bold);
     color: var(--color-dark-grey);
 }
 
@@ -408,3 +410,28 @@ p {
 /* Testimonials */
 
 /* Contact */
+#contact {
+    background-color: var(--color-dark-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 24px 0;
+}
+
+.contact__email {
+    font-size: var(--font-medium);
+}
+
+.contact__email a:hover {
+    color: var(--color-sky-blue);
+}
+
+.contact__rights {
+    margin-top: 48px;
+}
