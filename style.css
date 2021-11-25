@@ -183,6 +183,7 @@ p {
     text-align: center;
     padding: 150px;
     margin: auto;
+    max-width: 1000px;
     background-color: var(--color-white);
 }
 
