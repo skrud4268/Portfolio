@@ -181,10 +181,15 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+    background-color: var(--color-sky-blue);
+}
+
 /* Section common */
 .section {
   text-align: center;
   padding: 50px;
+  padding-top: 80px;
   margin: auto;
 }
 
@@ -333,8 +338,10 @@ p {
   border: 1px solid var(--color-light-grey);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
-  padding: 8px 48px;
+  padding: 8px 32px;
   margin: 2px;
+  position: relative;
+  width: 28%;
 }
 
 .category__btn.selected,
@@ -346,7 +353,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 5px;
 }
 
 .category__count {
@@ -357,9 +364,9 @@ p {
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 8px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -465,7 +472,7 @@ p {
 
 .exhibitions h1 {
   margin-bottom: 60px;
-  margin-top: 0;
+  margin-top: 16px;
 }
 
 .exhibition {
@@ -545,6 +552,7 @@ p {
 
 .contact__rights {
   margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 /* Arrow up */
@@ -579,8 +587,18 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+      /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+
   .navbar__toggle-btn {
     display: block;
+    right: 8px;
   }
 
   #navbar {
@@ -597,15 +615,22 @@ p {
   }
 
   .navbar__menu.open {
-      display: block;
+    display: block;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
@@ -625,6 +650,15 @@ p {
     border-bottom-right-radius: var(--size-border-radius);
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  .category__count {
+    right: 12px;
+  }
+
   .project {
     flex-grow: 1;
   }
@@ -635,4 +669,16 @@ p {
     height: 65%;
     margin: auto;
   }
+
+  .arrow-up {
+    bottom: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow-up span {
+    font-size: 35px;
+  }
+
 }
