@@ -23,6 +23,12 @@ navbarMenu.addEventListener('click', (event) => {
     scrollIntoView(link);
 });
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 // Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
@@ -80,7 +86,6 @@ workBtnContainer.addEventListener('click', (e)=> {
         projectContainer.classList.remove('anim-out');
     }, 300);
 });
-
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
