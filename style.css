@@ -623,6 +623,11 @@ p {
     padding-top: 40px;
   }
 
+  .home__avatar {
+      width: 200px;
+      height: 200px;
+  }
+
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
