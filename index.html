@@ -52,7 +52,7 @@
             alt="Jady's profile photo" 
             class="home__avatar"
             />
-            <h1 class="home__title">Hello, <br/>I'm dream coder.</h1>
+            <h1 class="home__title">Hello, <br/>I'm Nakyoung.</h1>
             <h2 class="home__description">A Software Engineer, continuously striving to broaden my world</h2>
             <button class="home__contact">Contact Me</button>
         </div>
@@ -216,22 +216,21 @@
     <!-- Work -->
     <section id="work" class="section">
         <div class="section__container">
-            <h1>My work</h1>
             <div class="projects">
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <div class="work__categories">
-                    <button class="category__btn active">All
+                    <button class="category__btn active" data-filter="*">All
                         <span class="category__count">13</span>
                     </button>
-                    <button class="category__btn">Ongoing
+                    <button class="category__btn" data-filter="ongoing">Ongoing
                         <span class="category__count">5</span>
                     </button>
-                    <button class="category__btn">Completed
+                    <button class="category__btn" data-filter="completed">Completed
                         <span class="category__count">8</span>
                     </button>
                 </div>
                 <ul class="work__projects">
-                <li class="project">
+                <li class="project" data-type="ongoing">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -247,13 +246,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             3D XR Science Fiction Mystery Game with creative stoy and unique characters. Will be exhibited in May, 2022.
                         </div>
-                        <div class="project__utility">Unity, C#</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Oct.2021-Ongoing</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="ongoing">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -270,13 +272,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Making a toy car that detects line and obastacles utilizing Jetson Nano.
                         </div>
-                        <div class="project__utility">Pixy2, Donkey Car, Jetson Nano, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jun.2021-Ongoing</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="ongoing">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -293,13 +298,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Remote proctor system for online-lectures. Compatible for Android, iOS, Mac and Windows.
                         </div>
-                        <div class="project__utility">Dynamo DB, Rest API, Android, iOS, Java, Swift, C#</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jan.2021-Ongoing</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="ongoing">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -316,13 +324,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Web application that makes english subtitles for online-lectures in korean.
                         </div>
-                        <div class="project__utility">Dynamo DB, Javascript, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jan.2021-Ongoing</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="ongoing">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -339,13 +350,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Robot that guides people who visits Student Support Center. It can also brew coffee from a coffee machine!
                         </div>
-                        <div class="project__utility">TEMI, Nyro, Dynamo DB, Rest API, Andorid, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jan.2021-Ongoing</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -361,13 +375,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Leftovers predicting system for cafeteria in Seoul National University. Personally cumulated image data by installing IP camera in the cafeteria.
                         </div>
-                        <div class="project__utility">IP Camera, Jetson TX2, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jun.20201-Aug.2021</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -383,13 +400,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Windows application that makes people availabe to control camera without touching mouse, nor keyboard while recording online lectures.
                         </div>
-                        <div class="project__utility">PTZ Camera, Jetson TX2, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jan.2021-Mar.2021</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -405,13 +425,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             The installation implies that people continuously get influenced by the surrounding environment.
                         </div>
-                        <div class="project__utility">Arduino, DC motor, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Oct.2020-Dec.2020</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -427,13 +450,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Installation art showing how media domesticates human beings - without criticizing the information they absorbs.
                         </div>
-                        <div class="project__utility">Arduino, Load cell HX711, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jul.2020-Sept.2020</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -451,13 +477,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Android application. It recommends what clothes to wear according to the weather and preference, among the clothes in your closet.
                         </div>
-                        <div class="project__utility">Android, Tensorflow, Java, Python</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Aug.2019-Jun.2020</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -475,13 +504,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Mobile application that automatically manages attendance when students come within a certain range.
                         </div>
-                        <div class="project__utility">Raspberry Pi, Rest API, iBeacon, Python, Android</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Feb.2018-Nov.2018</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -498,13 +530,16 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Mobile applications that share location by identifying hidden cameras with wi-fi SSID.
                         </div>
-                        <div class="project__utility">Android, Java</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Nov.2018</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
-                <li class="project">
+                <li class="project" data-type="completed">
                     <div class="project__cover">
                         <div class="project__img">
                             <i class="fas fa-folder"></i>
@@ -521,10 +556,13 @@
                         </div>
                     </div>
                     <div class="project__description">
-                        <div class="project__explanation">
+                        <div class="des__top">
                             Windows application that allows you to easily plan your trip and keep track of to-do list.
                         </div>
-                        <div class="project__utility">Php, Javascript, Java</div>
+                        <div class="des__bottom">
+                            <span class="project__status">Jul.2018</span>
+                            <div class="project__utility">Unity, C#</div>
+                        </div>
                     </div>
                 </li>
                 </ul>
@@ -586,10 +624,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
     </section>
 
     <!-- Contact -->
