@@ -161,9 +161,21 @@ p {
   text-align: center;
 }
 
+.home__container {
+  padding: 20px;
+}
+
 .home__avatar {
   width: 300px;
   height: 300px;
+}
+
+.home__title {
+  margin: 48px;
+}
+
+.home__description {
+  margin-bottom: 32px;
 }
 
 .home__title,
@@ -182,7 +194,7 @@ p {
 }
 
 .home__contact:hover {
-    background-color: var(--color-sky-blue);
+  background-color: var(--color-sky-blue);
 }
 
 /* Section common */
@@ -196,6 +208,11 @@ p {
 .section__container {
   max-width: 1232px;
   margin: auto;
+}
+
+/* Scroll common */
+.scroll-up {
+  transition: transform 0.7s, opacity 1s;
 }
 
 /* About */
@@ -381,8 +398,8 @@ p {
 }
 
 .work__projects.anim-out {
-    opacity: 0;
-    transform: scale(0.96) translatey(40px);
+  opacity: 0;
+  transform: scale(0.96) translatey(40px);
 }
 
 .project {
@@ -396,7 +413,7 @@ p {
 }
 
 .project.invisible {
-    display: none;
+  display: none;
 }
 
 .project__cover {
@@ -452,15 +469,15 @@ p {
 }
 
 .des__top {
-    font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-semi-bold);
 }
 
 .des__bottom {
-    color: var(--color-dark-white);
+  color: var(--color-dark-white);
 }
 
 .project__utility {
-    margin-top: 12px;
+  margin-top: 12px;
   font-size: var(--font-micro);
   color: var(--color-dark-white);
 }
@@ -587,14 +604,14 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-    :root {
-      /* Font size */
+  :root {
+    /* Font size */
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
-    }
+  }
 
   .navbar__toggle-btn {
     display: block;
@@ -685,5 +702,4 @@ p {
   .arrow-up span {
     font-size: 35px;
   }
-
 }
