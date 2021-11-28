@@ -567,6 +567,19 @@ p {
   color: var(--color-sky-blue);
 }
 
+
+.fa-envelope-open {
+  display: none;
+}
+
+.contact__email a:hover .fa-envelope {
+  display: none;
+}
+
+.contact__email a:hover .fa-envelope-open {
+  display: inline-block;
+}
+
 .contact__rights {
   margin-top: 48px;
   margin-bottom: 16px;
