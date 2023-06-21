@@ -1,658 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jady's Porfolio</title>
-    <meta name="description" content="Portfolio for wold-rennouned software engineer Jady"
+    <meta
+      name="description"
+      content="Portfolio for wold-rennouned software engineer Jady"
     />
-    <meta name="author" content="Jady"/>
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <script 
-        src="https://kit.fontawesome.com/138658badf.js" 
-        crossorigin="anonymous">
-    </script>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Jady" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/138658badf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <div class="logo__img">
-                <img src="imgs/whale.png" alt="jady's favicon whale" width="20" height="20">
-            </div>
-            <a href="#">Jady</a>
+      <div class="navbar__logo">
+        <div class="logo__img">
+          <img
+            src="imgs/whale.png"
+            alt="jady's favicon whale"
+            width="20"
+            height="20"
+          />
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">Projects</li>
-            <li class="navbar__menu__item" data-link="#exhibitions">Exhibitions</li>
-            <!--<li class="navbar__menu__item">Testimonials</li> -->
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
+        <a href="#">Jady</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">Projects</li>
+        <li class="navbar__menu__item" data-link="#exhibitions">Exhibitions</li>
+        <!--<li class="navbar__menu__item">Testimonials</li> -->
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
 
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home -->
     <section id="home">
-        <div class="home__container">
-            <img 
-                src="imgs/profile.png" 
-                alt="Jady's profile photo" 
-                class="home__avatar"
-            />
-            <h1 class="home__title">Hello, <br/>I'm Nakyoung.</h1>
-            <h2 class="home__description">A Software Engineer, continuously striving to broaden my world</h2>
-            <button class="home__contact">Contact Me</button>
-        </div>
+      <div class="home__container">
+        <img
+          src="imgs/profile.png"
+          alt="Jady's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, <br />I'm Nakyoung.</h1>
+        <h2 class="home__description">
+          A Software Engineer, continuously striving to broaden my world
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section section__container">
-        <div class="scroll-up">
-            <h1>About me</h1>
-            <p>
-                My name is Nakyoung, and I love creating things that make human interact with computer. 
-                <br/>I have diverse interests - from comics and movies to robots and AI, 
-                <br/>and my ultimate goal is to make 'true' interaction between computer and human.
-                <br/>Currently, I'm working as a TA of SSAI, Seoul National University. 
+      <div class="scroll-up">
+        <h1>About me</h1>
+        <p>
+          My name is Nakyoung, and I love creating things that make human
+          interact with computer.
+          <br />I have diverse interests - from comics and movies to robots and
+          AI, <br />and my ultimate goal is to make 'true' interaction between
+          computer and human. <br />Currently, I'm working as a TA of SSAI,
+          Seoul National University.
+        </p>
+      </div>
+      <div class="about__majors">
+        <div class="major scroll-up">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">HTML, CSS, JavaScript, XML</p>
+        </div>
+        <div class="major scroll-up">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">Android, iOS, Java, Swift</p>
+        </div>
+        <div class="major scroll-up">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">Python, Java, C, C++, C#</p>
+        </div>
+      </div>
+      <div class="about__exp">
+        <div class="exp scroll-up">
+          <img
+            src="imgs/exp/snu.png"
+            alt="Seoul National University"
+            class="exp__logo"
+            width="90"
+            height="90"
+          />
+          <div class="exp__description">
+            <p class="exp__name">
+              Currently obtaining Master's Degree in Infomation Studies
+              <br />at University of Texas at Austin
             </p>
+            <p class="exp__period">2022 Aug - Ongoing</p>
+          </div>
         </div>
-        <div class="about__majors">
-            <div class="major scroll-up">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <p class="major__description">
-                    HTML, CSS, JavaScript, XML
-                </p>
-            </div>
-            <div class="major scroll-up">
-                <div class="major__icon">
-                    <i class="fas fa-mobile"></i>
-                </div>
-                <h2 class="major__title">Mobile</h2>
-                <p class="major__description">
-                    Android, iOS, Java, Swift
-                </p>
-            </div>
-            <div class="major scroll-up">
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <p class="major__description">
-                    Python, Java, C, C++, C#
-                </p>
-            </div>
+        <div class="exp scroll-up">
+          <img
+            src="imgs/exp/snu.png"
+            alt="Seoul National University"
+            class="exp__logo"
+            width="90"
+            height="90"
+          />
+          <div class="exp__description">
+            <p class="exp__name">
+              Worked as a TA of System Semiconductor Engineering for AI(SSAI),
+              <br />Seoul National University.
+            </p>
+            <p class="exp__period">2021 Jan - 2022 Mar</p>
+          </div>
         </div>
-        <div class="about__exp">
-            <div class="exp scroll-up">
-                <img src="imgs/exp/snu.png" alt="Seoul National University" class="exp__logo" width="90" height="90">
-                <div class="exp__description">
-                    <p class="exp__name">
-                        Currently working as a TA of System Semiconductor Engineering for AI(SSAI),
-                        <br />Seoul National University. 
-                    </p>
-                    <p class="exp__period">2021 Jan - Ongoing</p>
-                </div>
-            </div>
-            <div class="exp scroll-up">
-                <img src="imgs/exp/sookmyung.png" alt="Sookmyung Women's University" class="exp__logo" width="85" height="100">
-                <div class="exp__description">
-                    <p class="exp__name">
-                        Graduated Sookmyung Women's University
-                        <br /> Bachelor of Enigneering, IT Engineering
-                    </p>
-                    <p class="exp__period">2016 Mar - 2021 Feb</p>
-                </div>
-            </div>
+        <div class="exp scroll-up">
+          <img
+            src="imgs/exp/sookmyung.png"
+            alt="Sookmyung Women's University"
+            class="exp__logo"
+            width="85"
+            height="100"
+          />
+          <div class="exp__description">
+            <p class="exp__name">
+              Graduated Sookmyung Women's University
+              <br />
+              Bachelor of Enigneering, IT Engineering
+            </p>
+            <p class="exp__period">2016 Mar - 2021 Feb</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
-        <div class="section__container">
-            <div class="scroll-up">
-                <h1>Skills</h1>
-                <h2>Skills & Attributes</h2>
-                <p>
-                    Experience with all phases of the software life-cycle. Passion for learning new technologies.
-                    <br/> Initiative to lead projects, dedication that gets work done, capability of cooperating with diverse people.
-                    <br/> And most importantly, creativity to find solution when the project is walled up.
-                </p>
-            </div>
-            <div class="skillset scroll-up">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>Python</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>Java</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 92%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>C++</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>CSS</span>
-                            <span>87%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 87%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_description">
-                            <span>JavaScript</span>
-                            <span>83%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 83%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__right__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio(code), Unity, Eclipse</span></li>
-                            <li><span>Android development tools</span></li>
-                            <li><span>iOS/Mac development tools</span></li>
-                            <li><span>Amazon AWS, Rapidminer, Kaggle</span></li>
-                            <li><span>Jetson TX2, Google Coral Board, Raspberry Pi</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__right__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>Sketch tools</span></li>
-                            <li><span>Adobe Programs</span></li>
-                            <li><span>Blender, Milkshape</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="section__container">
+        <div class="scroll-up">
+          <h1>Skills</h1>
+          <h2>Skills & Attributes</h2>
+          <p>
+            Experience with all phases of the software life-cycle. Passion for
+            learning new technologies.
+            <br />
+            Initiative to lead projects, dedication that gets work done,
+            capability of cooperating with diverse people. <br />
+            And most importantly, creativity to find solution when the project
+            is walled up.
+          </p>
         </div>
+        <div class="skillset scroll-up">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill_description">
+                <span>Python</span>
+                <span>95%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>Java</span>
+                <span>92%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>C++</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>CSS</span>
+                <span>87%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 87%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>JavaScript</span>
+                <span>83%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 83%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__right__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio(code), Unity, Eclipse</span></li>
+                <li><span>Android development tools</span></li>
+                <li><span>iOS/Mac development tools</span></li>
+                <li><span>Amazon AWS, Rapidminer, Kaggle</span></li>
+                <li>
+                  <span>Jetson TX2, Google Coral Board, Raspberry Pi</span>
+                </li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__right__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Sketch tools</span></li>
+                <li><span>Adobe Programs</span></li>
+                <li><span>Blender, Milkshape</span></li>
+                <li><span>Miro, Figma</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
-        <div class="section__container">
-            <div class="projects">
-                <h1 class="scroll-up">Projects</h1>
-                <div class="work__categories scroll-up">
-                    <button class="category__btn selected" data-filter="*">All
-                        <span class="category__count">13</span>
-                    </button>
-                    <button class="category__btn" data-filter="ongoing">Ongoing
-                        <span class="category__count">5</span>
-                    </button>
-                    <button class="category__btn" data-filter="completed">Completed
-                        <span class="category__count">8</span>
-                    </button>
+      <div class="section__container">
+        <div class="projects">
+          <h1 class="scroll-up">Projects</h1>
+          <div class="work__categories scroll-up">
+            <button class="category__btn selected" data-filter="*">
+              All
+              <span class="category__count">13</span>
+            </button>
+            <button class="category__btn" data-filter="ongoing">
+              Ongoing
+              <span class="category__count">5</span>
+            </button>
+            <button class="category__btn" data-filter="completed">
+              Completed
+              <span class="category__count">8</span>
+            </button>
+          </div>
+          <ul class="work__projects">
+            <li class="project scroll-up" data-type="ongoing">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
                 </div>
-                <ul class="work__projects">
-                <li class="project scroll-up" data-type="ongoing">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>BIFAN x Unity Short Film Challenge:
-                                <br/>I Spy My Battery
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fab fa-unity"></i>
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            3D XR Science Fiction Mystery Game with creative stoy and unique characters. Will be exhibited in May, 2022.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Oct.2021-Ongoing</span>
-                            <div class="project__utility">Unity, C#</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="ongoing">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>Autonomous Driving Toy Car
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-camera"></i>
-                            <i class="fab fa-python"></i>
-                            <i class="fas fa-car-side"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Making a toy car that detects line and obastacles utilizing Jetson Nano.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jun.2021-Ongoing</span>
-                            <div class="project__utility">Pixy2, Donkey Car, Jetson Nano, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="ongoing">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>Remote Proctor System for Online Tests
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-server"></i>
-                            <i class="fas fa-mobile-alt"></i>
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Remote proctor system for online-lectures. Compatible for Android, iOS, Mac and Windows.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jan.2021-Ongoing</span>
-                            <div class="project__utility">Dynamo DB, Rest API, Android, iOS, Java, Swift, C#</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="ongoing">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>AI Auto-Subtitles for Online Lectures
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-server"></i>
-                            <i class="fab fa-js-square"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Web application that makes english subtitles for online-lectures in korean.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jan.2021-Ongoing</span>
-                            <div class="project__utility">Dynamo DB, Javascript, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="ongoing">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>Robot Guide TEMI with nyro
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-robot"></i>
-                            <i class="fas fa-database"></i>
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Robot that guides people who visits Student Support Center. It can also brew coffee from a coffee machine!
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jan.2021-Ongoing</span>
-                            <div class="project__utility">TEMI, Nyro, Dynamo DB, Rest API, Andorid, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>Leftovers Predicting System using Jetson TX2
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-camera"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Leftovers predicting system for cafeteria in Seoul National University. Personally cumulated image data by installing IP camera in the cafeteria.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jun.20201-Aug.2021</span>
-                            <div class="project__utility">IP Camera, Jetson TX2, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>Project SSAI:
-                                <br/>Motion Control for PTZ Camera
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-camera"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Windows application that makes people availabe to control camera without touching mouse, nor keyboard while recording online lectures.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jan.2021-Mar.2021</span>
-                            <div class="project__utility">PTZ Camera, Jetson TX2, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Abyss
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-cogs"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            The installation implies that people continuously get influenced by the surrounding environment.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Oct.2020-Dec.2020</span>
-                            <div class="project__utility">Arduino, DC motor, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Domestication: who is in charge
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-balance-scale-right"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Installation art showing how media domesticates human beings - without criticizing the information they absorbs.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jul.2020-Sept.2020</span>
-                            <div class="project__utility">Arduino, Load cell HX711, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Weclo:
-                                <br />Dress Recommendation Service
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-mobile-alt"></i>
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Android application. It recommends what clothes to wear according to the weather and preference, among the clothes in your closet.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Aug.2019-Jun.2020</span>
-                            <div class="project__utility">Android, Tensorflow, Java, Python</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Hanium ICT Mentoring:
-                                <br />Attendance Management System
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-mobile-alt"></i>
-                            <i class="fab fa-bluetooth"></i>
-                            <i class="fab fa-python"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Mobile application that automatically manages attendance when students come within a certain range.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Feb.2018-Nov.2018</span>
-                            <div class="project__utility">Raspberry Pi, Rest API, iBeacon, Python, Android</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Sookmyung Women-in-Tech Hackathon: 
-                                <br />Hidden Camera Detector
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-mobile-alt"></i>
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Mobile applications that share location by identifying hidden cameras with wi-fi SSID.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Nov.2018</span>
-                            <div class="project__utility">Android, Java</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project scroll-up" data-type="completed">
-                    <div class="project__cover">
-                        <div class="project__img">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="project__title">
-                            <h3>
-                                Sookmyung College of Engineering Hackathon: 
-                                <br />Travel Planner Application
-                            </h3>
-                        </div>
-                        <div class="project__icon">
-                            <i class="fas fa-file-code"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                    </div>
-                    <div class="project__description">
-                        <div class="des__top">
-                            Windows application that allows you to easily plan your trip and keep track of to-do list.
-                        </div>
-                        <div class="des__bottom">
-                            <span class="project__status">Jul.2018</span>
-                            <div class="project__utility">Php, Javascript, Java</div>
-                        </div>
-                    </div>
-                </li>
-                </ul>
-            </div>
+                <div class="project__title">
+                  <h3>
+                    BIFAN x Unity Short Film Challenge: <br />I Spy My Battery
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fab fa-unity"></i>
+                  <i class="fas fa-file-code"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  3D XR Science Fiction Mystery Game with creative stoy and
+                  unique characters. Will be exhibited in May, 2022.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Oct.2021-Ongoing</span>
+                  <div class="project__utility">Unity, C#</div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="ongoing">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>Project SSAI: <br />Autonomous Driving Toy Car</h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-camera"></i>
+                  <i class="fab fa-python"></i>
+                  <i class="fas fa-car-side"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Making a toy car that detects line and obastacles utilizing
+                  Jetson Nano.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jun.2021-Ongoing</span>
+                  <div class="project__utility">
+                    Pixy2, Donkey Car, Jetson Nano, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="ongoing">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Project SSAI: <br />Remote Proctor System for Online Tests
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-server"></i>
+                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fas fa-laptop"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Remote proctor system for online-lectures. Compatible for
+                  Android, iOS, Mac and Windows.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jan.2021-Ongoing</span>
+                  <div class="project__utility">
+                    Dynamo DB, Rest API, Android, iOS, Java, Swift, C#
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="ongoing">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Project SSAI: <br />AI Auto-Subtitles for Online Lectures
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-server"></i>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Web application that makes english subtitles for
+                  online-lectures in korean.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jan.2021-Ongoing</span>
+                  <div class="project__utility">
+                    Dynamo DB, Javascript, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="ongoing">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>Project SSAI: <br />Robot Guide TEMI with nyro</h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-robot"></i>
+                  <i class="fas fa-database"></i>
+                  <i class="fas fa-file-code"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Robot that guides people who visits Student Support Center. It
+                  can also brew coffee from a coffee machine!
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jan.2021-Ongoing</span>
+                  <div class="project__utility">
+                    TEMI, Nyro, Dynamo DB, Rest API, Andorid, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Project SSAI: <br />Leftovers Predicting System using Jetson
+                    TX2
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-camera"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Leftovers predicting system for cafeteria in Seoul National
+                  University. Personally cumulated image data by installing IP
+                  camera in the cafeteria.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jun.20201-Aug.2021</span>
+                  <div class="project__utility">
+                    IP Camera, Jetson TX2, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>Project SSAI: <br />Motion Control for PTZ Camera</h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-camera"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Windows application that makes people availabe to control
+                  camera without touching mouse, nor keyboard while recording
+                  online lectures.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jan.2021-Mar.2021</span>
+                  <div class="project__utility">
+                    PTZ Camera, Jetson TX2, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>Abyss</h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-cogs"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  The installation implies that people continuously get
+                  influenced by the surrounding environment.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Oct.2020-Dec.2020</span>
+                  <div class="project__utility">Arduino, DC motor, Python</div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>Domestication: who is in charge</h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-balance-scale-right"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Installation art showing how media domesticates human beings -
+                  without criticizing the information they absorbs.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jul.2020-Sept.2020</span>
+                  <div class="project__utility">
+                    Arduino, Load cell HX711, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Weclo:
+                    <br />Dress Recommendation Service
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <i class="fas fa-file-code"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Android application. It recommends what clothes to wear
+                  according to the weather and preference, among the clothes in
+                  your closet.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Aug.2019-Jun.2020</span>
+                  <div class="project__utility">
+                    Android, Tensorflow, Java, Python
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Hanium ICT Mentoring:
+                    <br />Attendance Management System
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fab fa-bluetooth"></i>
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Mobile application that automatically manages attendance when
+                  students come within a certain range.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Feb.2018-Nov.2018</span>
+                  <div class="project__utility">
+                    Raspberry Pi, Rest API, iBeacon, Python, Android
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Sookmyung Women-in-Tech Hackathon:
+                    <br />Hidden Camera Detector
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fas fa-file-code"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Mobile applications that share location by identifying hidden
+                  cameras with wi-fi SSID.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Nov.2018</span>
+                  <div class="project__utility">Android, Java</div>
+                </div>
+              </div>
+            </li>
+            <li class="project scroll-up" data-type="completed">
+              <div class="project__cover">
+                <div class="project__img">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project__title">
+                  <h3>
+                    Sookmyung College of Engineering Hackathon:
+                    <br />Travel Planner Application
+                  </h3>
+                </div>
+                <div class="project__icon">
+                  <i class="fas fa-file-code"></i>
+                  <i class="fab fa-js-square"></i>
+                </div>
+              </div>
+              <div class="project__description">
+                <div class="des__top">
+                  Windows application that allows you to easily plan your trip
+                  and keep track of to-do list.
+                </div>
+                <div class="des__bottom">
+                  <span class="project__status">Jul.2018</span>
+                  <div class="project__utility">Php, Javascript, Java</div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <!-- Exhibitions -->
     <section id="exhibitions" class="section">
-        <div class="section__container">
-            <div class="exhibitions">
-                <h1 class="scroll-up">Exhibitions</h1>
-                <div class="work__exhibitions">
-                    <div class="exhibition scroll-up">
-                        <div class="exhibtion__description">
-                            <h3>Domestication</h3>
-                            <div class="exhibition__explanation">
-                                The installation resembles an ancient millstone that used the power of cows and horses. In order to watch media art, participants should push the millstone like domesticated animals an focus on the action.
-                            </div>
-                            <span>Role: Weight sensor installation</span>
-                        </div>
-                        <div class="exhibition__photo">
-                            <img 
-                            src="imgs/exhibition/domestication.jpeg"
-                            alt="domestication image" 
-                            class="photo__img"/>
-                        </div>
-                    </div>
-                    <div class="exhibition scroll-up">
-                        <div class="exhibition__photo">
-                            <img 
-                            src="imgs/exhibition/abyss.jpeg" 
-                            alt="abyss image" 
-                            class="photo__img"/>
-                        </div>
-                        <div class="exhibtion__description">
-                            <h3>Abyss</h3>
-                            <div class="exhibition__explanation">
-                                The black balloons represent the external pressure and catalyst of 'change' for person. Two motors are attatched to the balloon on both sides of the ceiling and floor. As time passes, the motors slowly stretch the balloons and make them explode.
-                            </div>
-                            <span>Role: Motor installation</span>
-                        </div>
-                    </div>
-                    <div class="exhibition scroll-up">
-                        <div class="exhibtion__description">
-                            <h3>I spy my battery</h3>
-                            <div class="exhibition__explanation">
-                                People can solve the mystery through interacting with unique characters in the story by the content. In this unreal world, players will experience multiple endings due to players' choices. Ongoing project, will be exhibited in May 2022.
-                            </div>
-                            <span>Role: software engineer</span>
-                        </div>
-                        <div class="exhibition__photo">
-                            <img 
-                            src="imgs/exhibition/bifan.png" 
-                            alt="bifan image" 
-                            class="photo__img"/>
-                        </div>
-                    </div>
+      <div class="section__container">
+        <div class="exhibitions">
+          <h1 class="scroll-up">Exhibitions</h1>
+          <div class="work__exhibitions">
+            <div class="exhibition scroll-up">
+              <div class="exhibtion__description">
+                <h3>Domestication</h3>
+                <div class="exhibition__explanation">
+                  The installation resembles an ancient millstone that used the
+                  power of cows and horses. In order to watch media art,
+                  participants should push the millstone like domesticated
+                  animals an focus on the action.
                 </div>
+                <span>Role: Weight sensor installation</span>
+              </div>
+              <div class="exhibition__photo">
+                <img
+                  src="imgs/exhibition/domestication.jpeg"
+                  alt="domestication image"
+                  class="photo__img"
+                />
+              </div>
             </div>
+            <div class="exhibition scroll-up">
+              <div class="exhibition__photo">
+                <img
+                  src="imgs/exhibition/abyss.jpeg"
+                  alt="abyss image"
+                  class="photo__img"
+                />
+              </div>
+              <div class="exhibtion__description">
+                <h3>Abyss</h3>
+                <div class="exhibition__explanation">
+                  The black balloons represent the external pressure and
+                  catalyst of 'change' for person. Two motors are attatched to
+                  the balloon on both sides of the ceiling and floor. As time
+                  passes, the motors slowly stretch the balloons and make them
+                  explode.
+                </div>
+                <span>Role: Motor installation</span>
+              </div>
+            </div>
+            <div class="exhibition scroll-up">
+              <div class="exhibtion__description">
+                <h3>I spy my battery</h3>
+                <div class="exhibition__explanation">
+                  People can solve the mystery through interacting with unique
+                  characters in the story by the content. In this unreal world,
+                  players will experience multiple endings due to players'
+                  choices. Ongoing project, will be exhibited in May 2022.
+                </div>
+                <span>Role: software engineer</span>
+              </div>
+              <div class="exhibition__photo">
+                <img
+                  src="imgs/exhibition/bifan.png"
+                  alt="bifan image"
+                  class="photo__img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
-        <div class="section__container scroll-up">
-            <h1 class="contact__title">Let's talk</h1>
-            <div class="contact__email">
-                <a href="mailto:skrud4268@naver.com">
-                    <i class="fas fa-envelope"></i>
-                    <i class="fas fa-envelope-open"></i>
-                    <span>skrud4268@naver.com</span>
-                </a>
-            </div>
-            <div class="contact__rights">
-                2021 Jady's Portfolio - All rights reserved
-            </div>
+      <div class="section__container scroll-up">
+        <h1 class="contact__title">Let's talk</h1>
+        <div class="contact__email">
+          <a href="mailto:skrud4268@naver.com">
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope-open"></i>
+            <span>skrud4268@naver.com</span>
+          </a>
         </div>
+        <div class="contact__rights">
+          2021 Jady's Portfolio - All rights reserved
+        </div>
+      </div>
     </section>
 
     <!-- Arrow up -->
     <button class="arrow-up">
-        <span>
-            <i class="fas fa-arrow-alt-circle-up"></i>
-        </span>
+      <span>
+        <i class="fas fa-arrow-alt-circle-up"></i>
+      </span>
     </button>
-
-</body>
+  </body>
 </html>
